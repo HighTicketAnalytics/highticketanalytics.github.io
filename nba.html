@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <script></script>
+  <head>
+    <title>NBA</title>
+    <link rel = 'icon' href = 'images/Logo.png'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <header>
+    <div style="width: 1000px; margin: auto;">
+      <span style=" margin:0px; float: left;"> <img src = '/images/Logo.png' style = "height: 100px;"></span>
+   </div>
+    <p style="width:800px;margin:1em auto;padding:0em 0em 0em 3em;font-size: smaller;color: grey;">Gambling, Analysis, News and Rumors for Major Sports | High Ticket Analytics</p>
+    <nav>
+      <ul class = 'nav'>
+        <li> <a href = 'http://127.0.0.1:5500/'> Home</a> </li>
+        <li> <a href = '#'>News</a> </li>
+        <li> <a href = '#'>About Us</a> </li>
+        <li> <a href = '#'>Contact Us </a></li>
+        <li> <a href = '#'>Join Mailing List!</a> </li>
+        <li  style="padding-left:7em;"><a href="#" class="fa fa-linkedin"></a></li>
+        <li><a href="#" class="fa fa-github"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+      </ul>
+      
+    </nav>   
+  
+  </header>
+  <div id="wrapper">
+    <body>
+      <h1 style = 'margin:auto;' id = 'main-header'>Please Select an NBA Team</h1>
+      <div>
+      <select name = 'Team' id = 'select'>
+        <option>Choose a Team</option> 
+        <option>Atlanta Hawks</option> 
+        <option>Boston Celtics</option> 
+        <option>Brooklyn Nets</option> 
+        <option>Charlotte Hornets</option> 
+        <option>Chicago Bulls</option> 
+        <option>Cleveland Cavaliers</option> 
+        <option>Dallas Mavericks</option> 
+        <option>Denver Nuggets</option> 
+        <option>Detroit Pistons</option> 
+        <option  >Golden State Warriors</option> 
+        <option  >Houston Rockets</option> 
+        <option  >Indiana Pacers</option> 
+        <option >LA Clippers</option> 
+        <option >Los Angeles Lakers</option> 
+        <option >Memphis Grizzlies</option> 
+        <option >Miami Heat</option> 
+        <option  >Milwaukee Bucks</option> 
+        <option >Minnesota Timberwolves</option> 
+        <option >New Orleans Pelicans</option> 
+        <option >New York Knicks</option> 
+        <option >Oklahoma City Thunder</option> 
+        <option >Orlando Magic</option> 
+        <option >Philadelphia 76ers</option> 
+        <option >Phoenix Suns</option> 
+        <option >Portland Trail Blazers</option> 
+        <option >Sacramento Kings</option> 
+        <option >San Antonio Spurs</option> 
+        <option >Toronto Raptors</option> 
+        <option >Utah Jazz</option> 
+        <option  >Washington Wizards</option> 
+      </select>
+      </div>
+      <div id = 'stat'>
+        <img id = 'place-holder' src = '/images/bball.png' style="width: 50%; height: 500px; margin:50px auto; float: left;">
+        <img id = 'place-holder2' src = '/images/bball2.jpg' style="width: 50%; height: 500px; margin:50px auto">
+        <canvas id = 'gameLog' style="width:500px;" >
+      </div>
+        
+    </body>
+  </div>
+  
+  <script src="main.js"></script>
+  <script src = 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
+
+</html> 
