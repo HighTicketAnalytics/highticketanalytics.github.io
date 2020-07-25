@@ -28,16 +28,27 @@
       <p>Becoming a member gives you exclusive access to info, services and communication only available to community members.</p>
       <img src = "images/community.jpg" style="height:350px; width: 500px; float: left;">
       <img src = "images/comm2.jpg" style="height:350px; width: 500px;">
-      <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
-        <button>Submit</button>
-
-      </form>
+      <form
+      action="https://formspree.io/mzbjykzl"
+      method="POST"
+    >
+    <label>
+      Your nane:
+      <input type="text" name="fullName">
+    </label>
+      <label>
+        Your email:
+        <input type="text" name="_replyto">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+    
+      <!-- your other form fields go here -->
+    
+      <button type="submit">Send</button>
+    </form>
     </div>
   </body>
   </header>
