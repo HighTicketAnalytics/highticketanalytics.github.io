@@ -28,27 +28,33 @@
       <p>Becoming a member gives you exclusive access to info, services and communication only available to community members.</p>
       <img src = "images/community.jpg" style="height:350px; width: 500px; float: left;">
       <img src = "images/comm2.jpg" style="height:350px; width: 500px;">
+      <div id = 'conform'>
       <form
       action="https://formspree.io/mzbjykzl"
-      method="POST"
-    >
-    <label>
-      Your Name:
-      <input type="text" name="fullName">
-    </label>
-      <label>
-        Your email:
-        <input type="text" name="_replyto">
-      </label>
-      <label>
-        Your message:
-        <textarea name="message"></textarea>
-      </label>
+      method="POST">
+      
+      <h1 style="text-align: center;">Contact Form</h1>
+      <h4 style="text-align: center;">Please fill all entries.</h4>
+      
+      <label id = 'fields'>
+        Your Name: <br>
+        <input type="text" name="fullName" style="width: 75%;">
+      </label> <br>
+      <label id = 'fields'>
+        Your email:<br>
+        <input type="text" name="_replyto" style="width: 75%;">
+      </label> <br>
+      <label id = 'fields'>
+        Your message: <br>
+        <textarea name="message" style="width: 75%;"></textarea>
+      </label> <br>
     
       <!-- your other form fields go here -->
     
-      <button type="submit">Send</button>
+      <button type="submit" style="width:50%">Send</button>
     </form>
+    
+    </div>
     </div>
   </body>
   </header>

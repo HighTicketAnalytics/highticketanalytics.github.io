@@ -236,3 +236,15 @@ h4{
     width:1000px;
     margin:auto;
   }
+  #conform{
+    border:solid black 2px;
+    background-color: #006341;
+    color:#ffffff;
+    padding:10px;
+    width:350px;
+    float: left;
+  }
+  #fields{
+    margin:10px 0px;
+    padding:10px 0px;
+  }
