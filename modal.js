@@ -47,3 +47,9 @@ $(".clear-cookie").on("click", function() {
       displayPopup();
     }, 3000);
   }
+
+  n =  new Date();
+  y = n.getFullYear();
+  m = n.getMonth() + 1;
+  d = n.getDate();
+  document.getElementById("date").innerHTML = m + "-" + d;
