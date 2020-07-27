@@ -4,7 +4,10 @@
     <title> High Ticket Analytics</title> 
     <link rel = 'icon' href = 'images/Logo.png'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jackmoore/colorbox/master/example1/colorbox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
   </head>
   
   <header>   
@@ -108,11 +111,19 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima voluptate perspiciatis, nobis eius doloribus rerum explicabo tempora suscipit natus non illo architecto ullam. Commodi consequuntur et eum officiis amet.</p>
           <small>By: Zane Hassoun | July 4th</small>
         </section>
-        
-    </body>
-  
-  </div>
-  
+        <div id="modal-content">
+          <h2>Join The High Ticket Analytics Community!</h2>
+          <p>New community members get 15% off sitewide products.</p>
+          <form
+      action="https://formspree.io/mzbjykzl"
+      method="POST">
+          <label for="fullName">Name:</label>
+          <input placeholder="Jane Doe" id="yurName" name="fullName">
+          <label for="Email">Email Adress:</label>
+          <input placeholder="me@highticketanalytics.com" id="yurEmail" name="_replyto">
+          <button class="button order-cheezburger">No I don't want 15% off.</button>
+          </form>
+        </div>
     <div id = 'more-stories'>
       <button id  = 'mbtn'><a href = '#'>More Stories</a></button>
     </div>
@@ -142,8 +153,10 @@
   </div>
   <section>
     <script src = 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/jackmoore/colorbox/master/jquery.colorbox-min.js"></script> 
     <script src="slideshow.js"></script>
+    <script src="modal.js"></script>
   </section>
 
 </html>

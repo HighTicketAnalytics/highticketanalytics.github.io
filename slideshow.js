@@ -35,4 +35,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-console.log(document.getElementsByClassName('block'));
