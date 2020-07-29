@@ -1,6 +1,4 @@
-//Calling API from hidden file
 
-let oddsAPI = config.odds_key;
 
 // Functions for transferring data into regular gambling format
 function Unix_timestamp(t)
@@ -30,7 +28,7 @@ mlbMline = [];
 //Calling and Pushing MLB Data
 getLinesMLB();
 async function getLinesMLB(){
-    let response = await fetch(`https://api.the-odds-api.com/v3/odds/?sport=baseball_mlb&region=us&mkt=h2h&apiKey=${oddsAPI}`);
+    let response = await fetch(`${mlbApi}`);
     let mlbLines = await response.json();
     for(i = 0; i<mlbLines.data.length; i++){
         mlbTime.push(Unix_timestamp(mlbLines.data[i].commence_time));
