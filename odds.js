@@ -1,5 +1,4 @@
 
-
 // Functions for transferring data into regular gambling format
 function Unix_timestamp(t)
 {
