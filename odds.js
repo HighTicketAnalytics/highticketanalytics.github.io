@@ -27,7 +27,7 @@ mlbMline = [];
 //Calling and Pushing MLB Data
 getLinesMLB();
 async function getLinesMLB(){
-    let response = await fetch(`${mlbApi}`);
+    let response = await fetch('https://elated-colden-e88ba7.netlify.app/.netlify/functions/token-hider/token-hider.js');
     let mlbLines = await response.json();
     for(i = 0; i<mlbLines.data.length; i++){
         mlbTime.push(Unix_timestamp(mlbLines.data[i].commence_time));
@@ -58,7 +58,7 @@ nbaMline = [];
 
 getLinesNBA();
 async function getLinesNBA(){
-    let response = await fetch(`https://api.the-odds-api.com/v3/odds/?sport=basketball_nba&region=us&mkt=h2h&apiKey=${oddsAPI}`);
+    let response = await fetch(`https://elated-colden-e88ba7.netlify.app/.netlify/functions/token-hider/token-hider.js`);
     let nbaLines = await response.json();
     for(i = 0; i<nbaLines.data.length; i++){
         nbaTime.push(Unix_timestamp(nbaLines.data[i].commence_time));
