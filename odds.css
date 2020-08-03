@@ -1,9 +1,9 @@
-#mlb {
+#mlb   {
     border-collapse: collapse;
     border: 1px solid black;
     padding:0px;
-    width: 50%;
-    float: left;
+    width: 100%;
+    table-layout: fixed;
   }
   tr:nth-of-type(2n) {
       background-color: #f2f2f2;
@@ -16,6 +16,7 @@ th {
   text-align: left;
   
 }
+
 tr td{
     padding: 5px;
     margin:0px;
@@ -24,6 +25,32 @@ tr td{
     border-collapse: collapse;
     border: 1px solid black;
     padding:0px;
-    width: 50%;
-    float: right;
+    width: 100%;
+    table-layout: fixed;
+}
+#nhl{
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding:0px;
+  width: 100%;
+  table-layout: fixed;
+  
+}
+#leagues{
+  border-bottom: gray 1px solid;
+}
+
+#leagues ul{
+  width:1000px;
+  margin:auto;
+}
+#leagues li{
+  display: inline;
+  margin:auto;
+}
+#leagues a{
+  color:black;
+  text-decoration: none;
+  padding:0 1em;
+  font-size: large;
 }
